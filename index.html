@@ -6,10 +6,75 @@
   </head>
 
   <body>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 100px;
+        color: #333;
+      }
+      p {
+        text-align: center;
+        color: #333;
+        font-style: italic;
+      }
+    </style>
+
     <h1>GIVE ME 5001</h1>
     <p>or click this butoon 2000times</p>
+    <div style="display: flex; padding: 30px">
+      <button
+        id="cryptoMe"
+        style="
+          flex: 1 1 auto;
+          border-radius: 5px;
+          font-stretch: 100%;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: large;
+        "
+      >
+        Crypto Me 500$
+      </button>
+      <button
+        id="clickMe"
+        style="
+          flex: 2 1 auto;
+          margin-left: 25px;
+          border-radius: 5px;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: large;
+        "
+      >
+        Click this button 5000times
+      </button>
 
-    <button>Crypto Me 500$</button>
-    <button>Click this button 5000times</button>
+      <h2></h2>
+      <script>
+        const buttonCryptoMe = document.getElementById("cryptoMe");
+        const buttonClickMe = document.getElementById("clickMe");
+
+        buttonCryptoMe.addEventListener("click", () => {
+          console.log("Hello");
+        });
+
+        buttonClickMe.addEventListener("click", function asdf() {
+          console.log("+1");
+          addingStuff();
+        });
+
+        function addingStuff() {
+          const newDiv = document.createElement("div");
+
+          // and give it some content
+          const newContent = document.createTextNode("Hi there and greetings!");
+
+          // add the text node to the newly created div
+          newDiv.appendChild(newContent);
+
+          // add the newly created element and its content into the DOM
+          const currentDiv = document.getElementById("div1");
+          document.body.insertBefore(newDiv, currentDiv);
+        }
+      </script>
+    </div>
   </body>
 </html>
