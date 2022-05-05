@@ -1,0 +1,127 @@
+<h1 id="thats-franks-markdown-file">Thats Franks Markdown File</h1>
+<figure>
+<img
+src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&amp;logo=Brave&amp;logoColor=white"
+alt="Brave" />
+<figcaption aria-hidden="true">Brave</figcaption>
+</figure>
+<h2 id="franks-cat">Franks Cat</h2>
+<h3 id="franks-cat-head">Franks Cat Head</h3>
+<p>Franks Cat has a Head and this head is <strong>blue</strong></p>
+<h3 id="franks-cat-body">Franks Cat Body</h3>
+<p>Franks Cat has a Body and this body is <strong>yellow</strong></p>
+<h3 id="frank-cat-arm">Frank Cat Arm</h3>
+<p>Franks Cat has some Arms and these arms are
+<strong>green</strong></p>
+<h2 id="franks-dog">Franks Dog</h2>
+<p>Franks dog is <del>yellow</del></p>
+<h2 id="why-is-markdown-used">Why is markdown used?</h2>
+<p>Markdown is used to write nice formatted Text and has heavy use in
+the IT Indurstry. Its easier then writing html, for example.</p>
+<h2 id="how-to-make-a-codeblock">How to make a codeblock?</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> buttonCryptoMe <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;cryptoMe&quot;</span>)<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> buttonClickMe <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;clickMe&quot;</span>)<span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    buttonCryptoMe<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&quot;click&quot;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Hello&quot;</span>)<span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    buttonClickMe<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&quot;click&quot;</span><span class="op">,</span> <span class="kw">function</span> <span class="fu">asdf</span>() {</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;+1&quot;</span>)<span class="op">;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">addingStuff</span>()<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">function</span> <span class="fu">addingStuff</span>() {</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> newDiv <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">&quot;div&quot;</span>)<span class="op">;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="co">// and give it some content</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> newContent <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createTextNode</span>(<span class="st">&quot;Hi there and greetings!&quot;</span>)<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="co">// add the text node to the newly created div</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        newDiv<span class="op">.</span><span class="fu">appendChild</span>(newContent)<span class="op">;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="co">// add the newly created element and its content into the DOM</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> currentDiv <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;div1&quot;</span>)<span class="op">;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="fu">insertBefore</span>(newDiv<span class="op">,</span> currentDiv)<span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
+<h2 id="commands-that-we-used-today">Commands that we used today?</h2>
+<h3 id="windows-shell-commands">Windows Shell Commands</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> Watson</span></code></pre></div>
+<p>It creates a directory, named Watson</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Watson</span></code></pre></div>
+<p>it changes directory to Watson</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir</span> .</span></code></pre></div>
+<p>shows whats in the current directory</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;Watson&quot;</span></span></code></pre></div>
+<p>Prints Watson to the console</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;Watson&quot;</span> <span class="op">&gt;</span> watson.md</span></code></pre></div>
+<p>Creates a markdown Files, called watson.md with the content of
+“watson”</p>
+<h3 id="git-commands">Git commands</h3>
+<p>…. 1. mkdir {} - make directory 2. cd {} - open directory 3. git
+-clone {} - clone repo link 4. dir - see new folder 5. cd {} - open repo
+– 6. echo {name} &gt; {file_type} * [echo = console.log() for the
+terminal] * [type {} = Views text of file] * [notepad {} = opens notepad
+file] 7. del {} = deletes file 8. git add {} = add file to git 9. git
+status = check commits 10. git commit -m {} = commits and adds log 11.
+git status 12. git push = uploads to cloud 13. git log (–oneline) = view
+history of dir …</p>
+<h3 id="adding-pictureslinks-in-markdown">Adding pictures&amp;links in
+markdown</h3>
+<p>Thats a picture in markdown, not scaleable as i know <img
+src="https://i.ibb.co/H7PWPtR/IMG-9144.jpg"
+alt="Thats a awesome picture" /></p>
+<p>You always can use html tags, like img, if you need more controll,
+but thats not markdown, but 90 of every markdown file gets compiled to
+<code>html</code>
+<img src="https://i.ibb.co/H7PWPtR/IMG-9144.jpg" alt="Thats a smaller awesome picture" style="width: 100px"></img></p>
+<p><a href="https://i.ibb.co/H7PWPtR/IMG-9144.jpg">Thats just an
+link</a></p>
+<h3 id="lets-write-with-mini-codeblocks">Lets write with mini
+codeblocks</h3>
+<p>Hola Watson,</p>
+<p>type in your console
+<code>pandoc -f markdown -t html frank.md -o frank.html</code> to
+convert it to simple html.</p>
+<p>Best Regards <strong>Frank</strong></p>
+<h3 id="tables-in-markdown">Tables in Markdown</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Syntax</th>
+<th style="text-align: right;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">git –help</td>
+<td style="text-align: right;">shows git help</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">git log –oneline</td>
+<td style="text-align: right;">shows past git commit quite nicely</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">dir</td>
+<td style="text-align: right;">shows whats in the current folder</td>
+</tr>
+</tbody>
+</table>
+<p>Here’s a simple footnote,<a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a> and here’s a longer
+one.<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a></p>
+<section class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>This is the first footnote.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Here’s one with multiple paragraphs
+and code.</p>
+<p>Indent paragraphs to include them in the footnote.</p>
+<p><code>{ my code }</code></p>
+<p>Add as many paragraphs as you like.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
